@@ -1,1 +1,3 @@
 # Chinese-Word-Segmentation
+
+Implementation of the chinese word boundary decision segmentation method from _A Realistic and Robust Model for Chinese Word Segmentation_ (Huang et al. 2019). The approach involves extracting 4-grams from text and separating these 4-grams into 3 bigrams and 2 unigrams, which are then used to predict if there exists a word separation between the middle two characters in the 4-grams. This repository extracts, builds and one-hot-encodes these proposed features, ultimately using sparse representations of these features vectors to train a logistic regression model or a naive bayes classifier on the chinese word segmentation task. 
